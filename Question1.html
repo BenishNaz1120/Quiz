@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgeCalculator</title>
+</head>
+
+<body>
+    <div>Enter your age:</div>
+    <input type="number" id="agecal">
+    <button onclick="agecalculator()">Calculate</button>
+
+    <script>
+        function agecalculator() {
+            var age = document.getElementById("agecal").value;
+            var days = 365.24;
+            var result = age * days;
+            document.write(result);
+
+        }
+    </script>
+</body>
+
+</html>

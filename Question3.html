@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimal</title>
+</head>
+
+<body>
+    <div>Enter decimal number:</div>
+    <input type="number" id="deci">
+    <div>Enter number to formate:</div>
+    <input type="number" id="for">
+
+    <button onclick=" decimal()">check</button>
+
+    <!-- <p id="demo"></p> -->
+
+
+    <script>
+        function decimal() {
+            var d = parseFloat(document.getElementById("deci").value);
+            var f = parseInt(document.getElementById("for").value);
+
+            
+ if ((typeof d !== 'number') || (typeof f !== 'number'))
+   return false;
+    	d = parseFloat(d) || 00000000000;
+	return d.toFixed(f);
+	}
+document.write(decimal());
+
+        
+// let num = 5.56789;
+// let n = num.toFixed();
+
+// document.getElementById("demo").innerHTML = n;
+
+    </script>
+</body>
+
+</html>
